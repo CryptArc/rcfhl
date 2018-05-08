@@ -1,0 +1,204 @@
+/*!  ^#Fonts and Colors */
+/*
+================================================== */
+/*! ^#Macros & Animations */
+/*
+================================================== */
+/* Centers div inside the most recent relatively\absolutely positioned parent element 
+	Must be used with position relative or absolute on the div to be centered.
+*/
+/* Transitions Elements */
+/* Placeholder Colors */
+/* Header Adjustment */
+/* ! ^#Desktop Header */
+/*
+================================================== */
+header {
+  position: relative;
+  z-index: 99999;
+}
+
+body:not(.home) .desktop-header-wrap,
+body.home header.stuck .desktop-header-wrap {
+  width: 100%;
+  height: 106px;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body:not(.home) .desktop-header,
+body.home header.stuck .desktop-header {
+  width: 100%;
+  height: 106px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.admin-bar body:not(.home) .desktop-header,
+.admin-bar body.home header.stuck .desktop-header {
+  top: 46px;
+}
+@media screen and (min-width: 783px) {
+  .admin-bar body:not(.home) .desktop-header,
+.admin-bar body.home header.stuck .desktop-header {
+    top: 32px;
+  }
+}
+body:not(.home) .desktop-header .homepage-logo,
+body.home header.stuck .desktop-header .homepage-logo {
+  display: none;
+}
+body:not(.home) .desktop-header .header-top,
+body.home header.stuck .desktop-header .header-top {
+  background: #EBEBEB;
+  height: 36px;
+}
+body:not(.home) .desktop-header .header-top ul li,
+body.home header.stuck .desktop-header .header-top ul li {
+  line-height: 36px;
+}
+body:not(.home) .desktop-header .header-top ul li.cta-button,
+body.home header.stuck .desktop-header .header-top ul li.cta-button {
+  background: #E4002B;
+  padding-left: 24px;
+  padding-right: 39px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 3px solid #E4002B;
+  border-radius: 0px;
+  margin-top: 0px;
+}
+body:not(.home) .desktop-header .header-top ul li.cta-button:hover a,
+body.home header.stuck .desktop-header .header-top ul li.cta-button:hover a {
+  color: #e6e6e6 !important;
+}
+body:not(.home) .desktop-header .header-top ul li.cta-button span,
+body.home header.stuck .desktop-header .header-top ul li.cta-button span {
+  margin-left: 8px;
+  width: 21px;
+  height: 18px;
+}
+body:not(.home) .desktop-header .header-top ul li.cta-button span img,
+body.home header.stuck .desktop-header .header-top ul li.cta-button span img {
+  width: 21px;
+  height: 18px;
+  display: inline-block;
+}
+body:not(.home) .desktop-header .header-top ul li.cta-button a,
+body.home header.stuck .desktop-header .header-top ul li.cta-button a {
+  color: #fff !important;
+}
+body:not(.home) .desktop-header .header-main .inner-logo,
+body.home header.stuck .desktop-header .header-main .inner-logo {
+  width: 240px;
+}
+body:not(.home) .desktop-header .header-main nav ul,
+body.home header.stuck .desktop-header .header-main nav ul {
+  text-align: right;
+}
+body:not(.home) .desktop-header #gbg-mega-menu,
+body.home header.stuck .desktop-header #gbg-mega-menu {
+  bottom: 0px;
+  top: auto;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.desktop-header .header-top {
+  font-size: 0px;
+  background: #EBEBEB;
+  z-index: 5;
+}
+.desktop-header .header-top ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.desktop-header .header-top ul li {
+  color: #646569;
+  font-size: 18px;
+  line-height: 36px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 16px;
+}
+.desktop-header .header-top ul li a {
+  color: #646569 !important;
+}
+.desktop-header .header-top ul li.search-button {
+  cursor: pointer;
+}
+.desktop-header .header-top ul li.search-button img {
+  margin-right: 4px;
+}
+.desktop-header .header-top ul li.cta-button {
+  background: #E4002B;
+  padding-left: 24px;
+  padding-right: 39px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.desktop-header .header-top ul li.cta-button img {
+  margin-left: 8px;
+}
+.desktop-header .header-top ul li.cta-button a {
+  color: #fff !important;
+}
+.desktop-header .header-main {
+  padding-left: 300px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+}
+.desktop-header .header-main .inner-logo {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  height: 40px;
+  width: 280px;
+}
+.desktop-header .header-main nav {
+  font-size: 0px;
+  position: relative;
+  margin-left: auto;
+}
+.desktop-header .header-main nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.desktop-header .header-main nav ul li {
+  height: 70px;
+  position: relative;
+  font-size: 20px;
+  line-height: 70px;
+  padding: 0px 14px;
+  border-bottom: 3px solid #fff;
+  text-align: center;
+  display: inline-block;
+}
+.desktop-header .header-main nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #383838 !important;
+}
+.desktop-header .header-main nav ul li.current-menu-item, .desktop-header .header-main nav ul li.current-page-ancestor, .desktop-header .header-main nav ul li.active, .desktop-header .header-main nav ul li:hover {
+  border-bottom: 3px solid #E4002B;
+}
+.desktop-header .header-main nav ul li.current-menu-item a, .desktop-header .header-main nav ul li.current-page-ancestor a, .desktop-header .header-main nav ul li.active a, .desktop-header .header-main nav ul li:hover a {
+  color: #E4002B !important;
+}

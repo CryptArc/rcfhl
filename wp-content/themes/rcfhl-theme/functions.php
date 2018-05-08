@@ -129,6 +129,10 @@ function rcfhl_theme_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css' );
+	
+	wp_enqueue_style( 'rcfhl-styles', get_template_directory_uri() . '/css/rcfhl-styles.css' );
 }
 add_action( 'wp_enqueue_scripts', 'rcfhl_theme_scripts' );
 
@@ -157,5 +161,25 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+/** 
+	ACF Options 	
+*/ 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Global Options',
+		'menu_title'	=> 'Global Options',
+		'menu_slug' 	=> 'global-options',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Header',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'global-options',
+	));
+	
 }
 
