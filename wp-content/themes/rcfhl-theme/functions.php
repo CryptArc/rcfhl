@@ -130,9 +130,16 @@ function rcfhl_theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	
+	wp_enqueue_script ( 'rcfhl-theme-js', get_template_directory_uri() . '/js/rcfhl-scripts.js' );
+	
+	wp_enqueue_style( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js' );
+	
 	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css' );
 	
 	wp_enqueue_style( 'rcfhl-styles', get_template_directory_uri() . '/css/rcfhl-styles.css' );
+	
+	wp_enqueue_style( 'material-icons', '//fonts.googleapis.com/icon?family=Material+Icons' );
+	
 }
 add_action( 'wp_enqueue_scripts', 'rcfhl_theme_scripts' );
 

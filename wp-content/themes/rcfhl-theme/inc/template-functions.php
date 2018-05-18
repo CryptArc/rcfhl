@@ -35,3 +35,11 @@ function rcfhl_theme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'rcfhl_theme_pingback_header' );
+
+function rcfhl_register_nav_menus() {
+	register_nav_menu( 'sub_nav', 'Sub Navigation Menu');
+	register_nav_menu( 'main_nav', 'Main Navigation Menu');
+}
+add_action( 'after_setup_theme', 'rcfhl_register_nav_menus');
+
+

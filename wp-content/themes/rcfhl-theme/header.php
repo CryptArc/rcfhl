@@ -24,51 +24,113 @@
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
 			
+			<!--! ^#Mobile Header -->
+			<div class="mobile-header-wrap d-md-none d-lg-none">
+				<div class="mobile-header">
+					
+					<div class="logo-wrap">
+						<a href="<?php echo esc_url( home_url() ); ?>">
+						<img class="img-responsive" src="<?php the_field( 'header_logo', 'option' ); ?>" alt="DMA logo">
+						</a>
+					</div>
+					
+					<div class="mobile-hamburger-wrap">
+						<i class="material-icons">
+							menu
+						</i>
+					</div>
+					
+				</div><!--mobile-header-->
+				
+				<!--! ^#Mobile Header Overlay -->
+				<div class="mobile-header-overlay">
+					<div class="info-wrap">
+						<div class="logo-wrap">
+							<a href="<?php echo esc_url( home_url() ); ?>">
+								<img class="img-responsive" src="<?php the_field( 'header_logo', 'option' ); ?>" alt="RCFHL Logo">
+							</a>
+						</div>
+						
+						<div class="mobile-overlay-close-wrap">
+							<i class="material-icons">close</i>
+						</div>
+						
+						<nav id="site-navigation" class="">
+							<?php wp_nav_menu( array( 
+								'theme_location' => 'main_nav',
+								'container' => false,
+								 ) ); 
+							 ?>
+						</nav><!-- #site-navigation -->
+						
+						<div class="menu-header-menu-container main-navigation search-wrap">
+							<ul>
+								<li class="search-button">
+<!-- 									<img src="/wp-content/themes/gotheme2015/images/search-icon-charcoal.svg" width="14" height="18" alt="search icon"/> -->
+									<span>Search</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--mobile-header-overlay-->
+			</div>
+			
 			<!--! ^#Desktop Header -->
-			<div class="desktop-header-wrap hidden-xs hidden-sm">
+			<div class="desktop-header-wrap d-none d-md-block">
 				<div class="desktop-header">
 					
 					<!--! -- ^#Top Menu -->
-					<div class="header-top">
-												
+					<div class="header-top fluid-container">
+<!--												
 						<div class="homepage-logo">
 							<img src="<?php the_field( 'header_logo', 'option' ); ?>" height="48" width="336" alt="DMA Logo"/>
 						</div>
-						
+
 						<ul>
 							<li class="search-button">
 								<img src="/wp-content/themes/gotheme2015/images/search-icon-charcoal.svg" width="14" height="18" alt="search icon"/>
 								<span>Search</span>
 							</li>
-							
-							<?php if ( get_field( 'additional_header_link', 'option' ) ) { ?>
+
+
+							<?php if ( get_field( 'subnav_links', 'option' ) ) { ?>
 								<li>
-									<a href="<?php the_field( 'additional_header_link', 'option' ); ?>">
-										<?php the_field( 'additional_header_link_text', 'option' ); ?>
+									<a href="<?php the_field( 'subnav_link', 'option' ); ?>">
+										<?php the_field( 'subnav_link_text', 'option' ); ?>
 									</a>
 								</li>
 							<?php } ?>
-							
-							<li class="cta-button">
-								<a href="<?php the_field( 'header_call_to_action_button_link', 'option' ); ?>" class="arrow-hover-animate-right">
-									<span><?php the_field( 'header_call_to_action_button_text', 'option' ); ?></span>
-									<span class="arrow"><img src="/wp-content/themes/gotheme2015/images/right-arrow-white.svg" alt="right icon"/></span>
-								</a>
-							</li>
-							
 						</ul>
+-->
+					<!--! -- ^#Sub Nav -->
+						<div class="row">
+							<div id="site-sub-nav" class="sub-nav col-xs-12">
+								<?php wp_nav_menu( array( 
+									'theme_location' => 'sub_nav',
+									'container' => false,
+									 ) ); 
+								 ?>
+							</div><!-- #site-subnav -->
+						</div>
 					</div><!--header-top-->
 					
 					<!--! -- ^#Main Menu -->
-					<div class="header-main">
-						
-						<a class="inner-logo" href="<?php echo esc_url( home_url() ); ?>">
-							<img src="<?php the_field( 'header_logo', 'option' ); ?>" alt="DMA Logo"/>
-						</a>
-						
-						<nav id="site-navigation" class="main-navigation" role="navigation">
-							<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-						</nav><!-- #site-navigation -->
+					<div class="header-main fluid-container">
+						<div class="row">
+							<div class="col-xs-4 col-md-4">
+								<a href="<?php echo esc_url( home_url() ); ?>">
+									<img src="<?php the_field( 'header_logo', 'option' ); ?>" alt="RCFHL Logo"/>
+								</a>
+							</div>
+							<nav id="site-navigation" class="col-xs-8 col-md-8" role="navigation">
+								<?php wp_nav_menu( array( 
+									'theme_location' => 'main_nav',
+									'container' => false,
+									'menu_class' => 'main-nav-menu'
+									 ) ); 
+								 ?>
+							</nav><!-- #site-navigation -->
+						</div>
 						
 						
 					</div><!--header-main-->
