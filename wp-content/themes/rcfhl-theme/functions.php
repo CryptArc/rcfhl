@@ -130,9 +130,13 @@ function rcfhl_theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	
+	wp_enqueue_style( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js' );
+
+	wp_enqueue_script( 'slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' );
+	
 	wp_enqueue_script ( 'rcfhl-theme-js', get_template_directory_uri() . '/js/rcfhl-scripts.js' );
 	
-	wp_enqueue_style( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js' );
+	wp_enqueue_style( 'slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
 	
 	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css' );
 	
@@ -188,5 +192,16 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'global-options',
 	));
 	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Repeated Sections',
+		'menu_title'	=> 'Repeated Sections',
+		'parent_slug'	=> 'global-options',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Footer',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'global-options',
+	));
+	
 }
-

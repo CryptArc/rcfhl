@@ -55,7 +55,7 @@
 							<i class="material-icons">close</i>
 						</div>
 						
-						<nav id="site-navigation" class="">
+						<nav id="site-navigation" class="nav-links">
 							<?php wp_nav_menu( array( 
 								'theme_location' => 'main_nav',
 								'container' => false,

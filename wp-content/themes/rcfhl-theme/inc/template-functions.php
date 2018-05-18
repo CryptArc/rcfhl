@@ -42,4 +42,13 @@ function rcfhl_register_nav_menus() {
 }
 add_action( 'after_setup_theme', 'rcfhl_register_nav_menus');
 
+add_action( 'admin_head', 'hide_editor' );
+function hide_editor() {
+	$template_file = $template_file = basename( get_page_template() );
+	if($template_file == 'template-home.php' || 'template-register.php'){ // template
+		remove_post_type_support('page', 'editor');
+	}
+}
+
+
 

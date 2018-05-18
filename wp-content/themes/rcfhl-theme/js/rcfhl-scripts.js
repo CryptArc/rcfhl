@@ -1,9 +1,5 @@
 jQuery(function($){
-	
-	jQuery(window).load(function () {
-	    $('.gbg-loader-wrap').fadeOut();
-	
-	});     
+	  
      /*! ^# Document.ready */
     $(document).ready(function() {
 	    
@@ -23,6 +19,15 @@ jQuery(function($){
 	        $('.about-menu-link').removeClass('open-menu');
 	        $('.mobile-search-overlay').removeClass('open-menu');
         });
+        
+        /*! --  ^#Homepage Image Slider */
+		$('.home-image-slider').slick({
+/*
+			centerMode: true,
+			centerPadding: '60px',
+			slidesToShow: 3,
+*/
+		});
         
     }); //! ^# end document.ready
     
