@@ -5,7 +5,7 @@
  * The SportsPress player list class handles individual player list data.
  *
  * @class 		SP_Player_List
- * @version		2.6.2
+ * @version		2.6.4
  * @package		SportsPress/Classes
  * @category	Class
  * @author 		ThemeBoy
@@ -116,8 +116,8 @@ class SP_Player_List extends SP_Secondary_Post {
 				);
 			endif;
 			
+			$team_key = 'sp_team';
 			if ( $team ):
-				$team_key = 'sp_team';
 				switch ( $era ):
 					case 'current':
 						$team_key = 'sp_current_team';

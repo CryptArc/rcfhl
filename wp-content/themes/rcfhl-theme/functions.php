@@ -132,11 +132,11 @@ function rcfhl_theme_scripts() {
 	
 	wp_enqueue_style( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js' );
 
-	wp_enqueue_script( 'slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' );
+	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick/slick.js' );
 	
 	wp_enqueue_script ( 'rcfhl-theme-js', get_template_directory_uri() . '/js/rcfhl-scripts.js' );
 	
-	wp_enqueue_style( 'slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' );
+	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/slick/slick.css' );
 	
 	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css' );
 	
@@ -173,9 +173,9 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-/** 
-	ACF Options 	
-*/ 
+
+/* ================= ACF Options =======================*/
+
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
@@ -204,4 +204,145 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'global-options',
 	));
 	
+}
+
+/* ================= Gravity Forms Dynamic Teams Dropdown =======================*/
+ 
+add_filter( 'gform_pre_render_2', 'populate_teams' );
+add_filter( 'gform_pre_validation_2', 'populate_teams' );
+add_filter( 'gform_pre_submission_filter_2', 'populate_teams' );
+add_filter( 'gform_admin_pre_render_2', 'populate_teams' );
+
+function populate_teams( $form ) {
+ 
+    foreach ( $form['fields'] as &$field ) {
+ 
+        if ( $field->type != 'post_custom_field' || strpos( $field->cssClass, 'populate-teams' ) === false ) {
+            continue;
+        }
+ 
+        // you can add additional parameters here to alter the posts that are retrieved
+        // more info: http://codex.wordpress.org/Template_Tags/get_posts
+        $posts = get_posts( 'post_type=sp_team&numberposts=-1' );
+ 
+        $choices = array();
+ 
+        foreach ( $posts as $post ) {
+            $choices[] = array( 'text' => $post->post_title, 'value' => $post->post_title );
+        }
+ 
+        // update 'Select a Post' to whatever you'd like the instructive option to be
+        $field->placeholder = 'Select a Team';
+        $field->choices = $choices;
+ 
+    }
+ 
+    return $form;
+}
+
+/* ================= Gravity Forms Dynamic Seasons Dropdown =======================*/
+ 
+add_filter( 'gform_pre_render_2', 'populate_seasons' );
+add_filter( 'gform_pre_validation_2', 'populate_seasons' );
+add_filter( 'gform_pre_submission_filter_2', 'populate_seasons' );
+add_filter( 'gform_admin_pre_render_2', 'populate_seasons' );
+
+function populate_seasons( $form ) {
+ 
+    foreach ( $form['fields'] as &$field ) {
+ 
+        if ( $field->type != 'post_custom_field' || strpos( $field->cssClass, 'populate-seasons' ) === false ) {
+            continue;
+        }
+ 
+        // you can add additional parameters here to alter the posts that are retrieved
+        // more info: http://codex.wordpress.org/Template_Tags/get_posts
+        $seasons = get_terms( 'sp_season', array(
+			'hide_empty' => 0
+		) );
+		 
+        $choices = array();
+ 
+        foreach ( $seasons as $season ) {
+            $choices[] = array( 'text' => $season->name, 'value' => $season->name );
+        }
+ 
+        // update 'Select a Post' to whatever you'd like the instructive option to be
+        $field->placeholder = 'Select a Season';
+        $field->choices = $choices;
+ 
+    }
+ 
+    return $form;
+}
+
+/* ================= Gravity Forms Dynamic Leagues Dropdown =======================*/
+ 
+add_filter( 'gform_pre_render_2', 'populate_league' );
+add_filter( 'gform_pre_validation_2', 'populate_league' );
+add_filter( 'gform_pre_submission_filter_2', 'populate_league' );
+add_filter( 'gform_admin_pre_render_2', 'populate_league' );
+
+function populate_league( $form ) {
+ 
+    foreach ( $form['fields'] as &$field ) {
+ 
+        if ( $field->type != 'post_custom_field' || strpos( $field->cssClass, 'populate-league' ) === false ) {
+            continue;
+        }
+ 
+        // you can add additional parameters here to alter the posts that are retrieved
+        // more info: http://codex.wordpress.org/Template_Tags/get_posts
+        $leagues = get_terms( 'sp_league', array(
+			'hide_empty' => 0
+		) );
+		 
+        $choices = array();
+ 
+        foreach ( $leagues as $league ) {
+            $choices[] = array( 'text' => $league->name, 'value' => $league->name );
+        }
+ 
+        // update 'Select a Post' to whatever you'd like the instructive option to be
+        $field->placeholder = 'Select a League';
+        $field->choices = $choices;
+ 
+    }
+ 
+    return $form;
+}
+
+/* ================= Gravity Forms + Stripe: Create Customer =======================*/
+
+add_filter( 'gform_stripe_customer_id', function ( $customer_id, $feed, $entry, $form ) {
+    if ( rgars( $feed, 'meta/transactionType' ) == 'product' && rgars( $feed, 'meta/feedName' ) == 'Create Customer' ) {
+        $customer_meta = array();
+ 
+        $email_field = rgars( $feed, 'meta/receipt_field' );
+        if ( ! empty( $email_field ) && strtolower( $email_field ) !== 'do not send receipt' ) {
+            $customer_meta['email'] = gf_stripe()->get_field_value( $form, $entry, $email_field );
+        }
+ 
+        $customer = gf_stripe()->create_customer( $customer_meta, $feed, $entry, $form );
+ 
+        return $customer->id;
+    }
+ 
+    return $customer_id;
+}, 10, 4 );
+ 
+add_filter( 'gform_stripe_charge_authorization_only', function ( $authorization_only, $feed ) {
+    if ( rgars( $feed, 'meta/feedName' ) == 'Create Customer' ) {
+        return true;
+    }
+ 
+    return $authorization_only;
+}, 10, 2 );
+
+
+/* ================= Gravity Forms + Stripe: Custom Charge Description =======================*/
+
+add_filter( 'gform_stripe_charge_description', 'change_stripe_description', 10, 3 );
+function change_stripe_description( $description, $strings, $entry ) {
+    return rgar( $entry, '25' ) . ', ' . rgar( $entry, '3' );
 }

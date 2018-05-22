@@ -19,15 +19,30 @@ jQuery(function($){
 	        $('.about-menu-link').removeClass('open-menu');
 	        $('.mobile-search-overlay').removeClass('open-menu');
         });
-        
-        /*! --  ^#Homepage Image Slider */
+		
 		$('.home-image-slider').slick({
-/*
+// 			autoplay: true,
 			centerMode: true,
+			variableWidth: true,
+			dots: true,
+			arrows: true,
 			centerPadding: '60px',
+// 			nextArrow: '<button class="next"><img src="/wp-content/themes/gotheme2015/images/right-arrow-dark-grey.svg" width="25" height="27" alt="right arrow"></button>',
+// 			prevArrow: '<button class="prev"><img src="/wp-content/themes/gotheme2015/images/right-arrow-dark-grey.svg" width="25" height="27" alt="left arrow"></button>', 
 			slidesToShow: 3,
-*/
-		});
+			responsive: [
+				{
+					breakpoint: 991,
+					settings: {
+						slidesToShow: 1,
+						arrows: true,
+						dots: true,
+// 						nextArrow: '<button class="next"><img src="/wp-content/themes/gotheme2015/images/right-arrow-dark-grey.svg" width="25" height="27" alt="right arrow"></button>',
+// 						prevArrow: '<button class="prev"><img src="/wp-content/themes/gotheme2015/images/right-arrow-dark-grey.svg" width="25" height="27" alt="left arrow"></button>', 
+					}
+				}
+			],
+		});	
         
     }); //! ^# end document.ready
     

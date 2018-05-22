@@ -455,7 +455,6 @@ body.home header.stuck .desktop-header {
 	}
 }//body:nothome or home.header.stuck desktop-header
 
-//shared styles across all headers
 .desktop-header {
 	.header-top {
 		font-size: 0px;
@@ -557,6 +556,139 @@ body.home header.stuck .desktop-header {
 }
 
 
+/* ! ======= ^#Homepage =======*/
+
+/*! -- ^#Image Slider */
+.home-image-slider {
+	position: relative;
+	padding-bottom: 40px;
+	padding-top: 32px;
+	
+	.slick-track {
+		margin-top: 20px;
+		height: 275px;
+	}
+	
+	.slick-slide {
+		padding: 0px 8px;
+		overflow: visible;
+		position: relative;
+		@include vert-center;
+		img {
+			height: 300px;
+			box-shadow: 0 0 12px 0 rgba(0,0,0,0.30);
+// 			max-width: 320px;
+		}
+		
+	}
+	.slick-center {
+		img {
+			@include transition-me(all, .5s);
+		}
+	}
+	
+	.slick-arrow {
+		background: none;
+		border: none;
+		-webkit-appearance: none;
+		position: absolute;
+		bottom: 54px;
+		height: 24px;
+		padding: 0px 12px;
+		margin: 0px;
+		vertical-align: middle;
+		outline: none !important;
+	    -webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    z-index: 999;
+	    cursor: pointer;
+		img {
+			display: block;
+		}
+		
+		&.prev {
+			-webkit-transform: translateX(-100%) rotate(180deg);
+			-moz-transform: translateX(-100%) rotate(180deg);
+			-ms-transform: translateX(-100%) rotate(180deg);
+			-o-transform: translateX(-100%) rotate(180deg);
+			transform: translateX(-100%) rotate(180deg);
+		}
+
+	}//slick-arrow
+	
+	.slick-next {
+		left: calc(50% + 80px);
+	}
+	.slick-prev {
+		left: calc(50% - 90px);
+	}
+	
+	.slick-dots {
+		list-style: none;
+		margin: 0 auto;
+		padding: 15px 0;
+		position: relative;
+		width: 120px;
+		text-align: center;
+		li {
+			display: inline-block;
+			display: inline-block;
+		    border: 2px solid black;
+		    width: 8px;
+		    height: 8px;
+		    margin: 0 8px;
+		    border-radius: 4px;
+		    cursor: pointer;
+			button {
+				display: none;
+				background: none;
+				border: none;
+				-webkit-appearance: none;
+				bottom: 0;
+				height: 24px;
+				padding: 0px 12px;
+				margin: 0px;
+				vertical-align: middle;
+				outline: none !important;
+			}
+		}
+		.slick-active {
+			background-color: black;
+		}
+	}
+	
+}//home-image-slider
+
+/* ! -- ^#Features */
+.features-wrap {
+	h2 {
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 56px;
+	}
+	.feature {
+		.row {
+			margin-bottom: 32px;
+			.icon {
+				margin-bottom: 0px;
+				padding-right: 0;
+			}
+			.row {
+				text-align: left;
+				h3 {
+					margin-bottom: 8px;
+					font-size: 24px;
+				}
+				p {
+					margin-bottom: 0;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
 /* ! --------^#Media Queries-------- *//*
 =============================================================================================================================================================================== */
 
@@ -573,6 +705,21 @@ body.home header.stuck .desktop-header {
 =============================================================================================================================================================================== */
 
 	@media (min-width: 768px) {
+		
+		/*! -- ^#Features */
+		.features-wrap {
+			h2 {
+				text-align: center;
+			}
+			.feature {
+				.row {
+					text-align: center;
+					p {
+					}
+				}
+			}
+		}
+		
 	}
 
 
@@ -582,6 +729,68 @@ body.home header.stuck .desktop-header {
 =============================================================================================================================================================================== */
 
 	@media (min-width: 992px) {
+		
+		/*! ====== ^#Homepage ====== */
+		
+		/*! -- ^#Image Slider */
+		.home-image-slider {
+			position: relative;
+			padding-bottom: 40px;
+			padding-top: 32px;
+			
+			.slick-track {
+				margin-top: 20px;
+				height: 375px;
+			}
+			
+			.slick-slide {
+				padding: 0px 8px;
+				overflow: visible;
+				position: relative;
+				@include vert-center;
+				img {
+					height: 300px;
+					box-shadow: 0 0 12px 0 rgba(0,0,0,0.30);
+					width: auto;
+					max-width: none;
+				}
+				
+			}
+			.slick-center {
+				img {
+					height: 350px;
+					width: auto;
+				}
+			}
+			
+/*
+			.slick-next {
+				margin-left: 100px;
+			}
+			.slick-prev {
+				margin-left: -100px;
+			}
+*/
+		}//home-image-slider
+		
+		/*! -- ^#Features */
+		.features-wrap {
+			h2 {
+				text-align: center;
+				margin: 0 auto;
+				padding-bottom: 56px;
+			}
+			.feature {
+				padding-bottom: 56px;
+				.row {
+					text-align: center;
+					p {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		
 	}
 	
 	
