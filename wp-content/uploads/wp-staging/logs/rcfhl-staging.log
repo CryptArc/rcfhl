@@ -1,0 +1,446 @@
+[INFO]-[2018/05/29 07:38:10] DB Copy: Creating table wpstg0_commentmeta
+[INFO]-[2018/05/29 07:38:10] DB Copy: Creating table wpstg0_comments
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_comments as wpstg0_comments from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_duplicator_packages
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_duplicator_packages as wpstg0_duplicator_packages from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_addon_feed
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_addon_feed as wpstg0_gf_addon_feed from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_addon_payment_callback
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_addon_payment_transaction
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_addon_payment_transaction as wpstg0_gf_addon_payment_transaction from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_draft_submissions
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_entry
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_entry as wpstg0_gf_entry from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_entry_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_entry_meta as wpstg0_gf_entry_meta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_entry_notes
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_entry_notes as wpstg0_gf_entry_notes from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_form
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_form as wpstg0_gf_form from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_form_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_form_meta as wpstg0_gf_form_meta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_form_view
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_form_view as wpstg0_gf_form_view from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_links
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_options
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_options as wpstg0_options from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_postmeta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_postmeta as wpstg0_postmeta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_posts
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_posts as wpstg0_posts from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_form
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_rg_form as wpstg0_rg_form from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_form_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_rg_form_meta as wpstg0_rg_form_meta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_form_view
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_incomplete_submissions
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_detail
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_detail_long
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_notes
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_stripe
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_rg_stripe as wpstg0_rg_stripe from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_stripe_transaction
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_term_relationships
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_term_relationships as wpstg0_term_relationships from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_term_taxonomy
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_term_taxonomy as wpstg0_term_taxonomy from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_termmeta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_termmeta as wpstg0_termmeta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_terms
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_terms as wpstg0_terms from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_usermeta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_usermeta as wpstg0_usermeta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_users
+[INFO]-[2018/05/29 07:38:12] DB Copy: _OTG_users as wpstg0_users from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:10] DB Copy: Creating table wpstg0_commentmeta
+[INFO]-[2018/05/29 07:38:10] DB Copy: Creating table wpstg0_comments
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_comments as wpstg0_comments from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_duplicator_packages
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_duplicator_packages as wpstg0_duplicator_packages from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_addon_feed
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_addon_feed as wpstg0_gf_addon_feed from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_addon_payment_callback
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_addon_payment_transaction
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_addon_payment_transaction as wpstg0_gf_addon_payment_transaction from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_draft_submissions
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_entry
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_entry as wpstg0_gf_entry from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_entry_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_entry_meta as wpstg0_gf_entry_meta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_entry_notes
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_entry_notes as wpstg0_gf_entry_notes from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_form
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_form as wpstg0_gf_form from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_form_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_form_meta as wpstg0_gf_form_meta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_gf_form_view
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_gf_form_view as wpstg0_gf_form_view from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_links
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_options
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_options as wpstg0_options from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_postmeta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_postmeta as wpstg0_postmeta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_posts
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_posts as wpstg0_posts from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_form
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_rg_form as wpstg0_rg_form from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_form_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_rg_form_meta as wpstg0_rg_form_meta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_form_view
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_incomplete_submissions
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_detail
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_detail_long
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_meta
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_lead_notes
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_stripe
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_rg_stripe as wpstg0_rg_stripe from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_rg_stripe_transaction
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_term_relationships
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_term_relationships as wpstg0_term_relationships from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_term_taxonomy
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_term_taxonomy as wpstg0_term_taxonomy from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_termmeta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_termmeta as wpstg0_termmeta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_terms
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_terms as wpstg0_terms from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_usermeta
+[INFO]-[2018/05/29 07:38:11] DB Copy: _OTG_usermeta as wpstg0_usermeta from 0 to 5000 records
+[INFO]-[2018/05/29 07:38:11] DB Copy: Creating table wpstg0_users
+[INFO]-[2018/05/29 07:38:12] DB Copy: _OTG_users as wpstg0_users from 0 to 5000 records
+[]-[] 
+[]-[] 
+[]-[] 
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_comments 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_duplicator_packages 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_addon_feed 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_addon_payment_transaction 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_entry 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_entry_meta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_entry_notes 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_form 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_form_meta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_form_view 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_options 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_postmeta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_posts 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_rg_form 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_rg_form_meta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_rg_stripe 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_term_relationships 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_term_taxonomy 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_termmeta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_terms 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_usermeta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_users 0 to 5000 records
+[]-[] 
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_comments 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_duplicator_packages 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_addon_feed 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_addon_payment_transaction 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_entry 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_entry_meta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_entry_notes 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_form 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_form_meta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_gf_form_view 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_options 0 to 5000 records
+[INFO]-[2018/05/29 07:38:14] DB Processing:  Table wpstg0_postmeta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_posts 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_rg_form 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_rg_form_meta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_rg_stripe 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_term_relationships 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_term_taxonomy 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_termmeta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_terms 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_usermeta 0 to 5000 records
+[INFO]-[2018/05/29 07:38:15] DB Processing:  Table wpstg0_users 0 to 5000 records
+[]-[] 
+[]-[] 
+[INFO]-[2018/05/29 07:38:18] Scanning / for files
+[INFO]-[2018/05/29 07:38:18] Scanning / for files
+[INFO]-[2018/05/29 07:38:19] Scanning /wp-content for its sub-directories and files
+[INFO]-[2018/05/29 07:38:19] Scanning /wp-content for its sub-directories and files
+[INFO]-[2018/05/29 07:38:21] Scanning /wp-includes for its sub-directories and files
+[INFO]-[2018/05/29 07:38:21] Scanning /wp-includes for its sub-directories and files
+[INFO]-[2018/05/29 07:38:23] Scanning /wp-admin for its sub-directories and files
+[INFO]-[2018/05/29 07:38:23] Scanning /wp-admin for its sub-directories and files
+[INFO]-[2018/05/29 07:38:26] Copying files...
+[INFO]-[2018/05/29 07:38:26] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/.DS_Store
+[INFO]-[2018/05/29 07:38:26] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/.htaccess
+[INFO]-[2018/05/29 07:38:26] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/.DS_Store
+[INFO]-[2018/05/29 07:38:26] Total 50 files processed
+[INFO]-[2018/05/29 07:38:26] Total 100 files processed
+[INFO]-[2018/05/29 07:38:26] Total 150 files processed
+[INFO]-[2018/05/29 07:38:26] Total 200 files processed
+[INFO]-[2018/05/29 07:38:26] Total 250 files processed
+[INFO]-[2018/05/29 07:38:26] Total 300 files processed
+[INFO]-[2018/05/29 07:38:26] Total 350 files processed
+[INFO]-[2018/05/29 07:38:26] Total 400 files processed
+[INFO]-[2018/05/29 07:38:26] Total 450 files processed
+[INFO]-[2018/05/29 07:38:26] Total 500 files processed
+[INFO]-[2018/05/29 07:38:26] Total 550 files processed
+[INFO]-[2018/05/29 07:38:26] Total 600 files processed
+[INFO]-[2018/05/29 07:38:26] Total 650 files processed
+[INFO]-[2018/05/29 07:38:26] Total 700 files processed
+[INFO]-[2018/05/29 07:38:26] Total 750 files processed
+[INFO]-[2018/05/29 07:38:26] Total 800 files processed
+[INFO]-[2018/05/29 07:38:26] Total 850 files processed
+[INFO]-[2018/05/29 07:38:26] Total 900 files processed
+[INFO]-[2018/05/29 07:38:26] Total 950 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1000 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1050 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1100 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1150 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1200 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1250 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1300 files processed
+[INFO]-[2018/05/29 07:38:27] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/plugins/mojo-marketplace-wp-plugin/vendor/jetpack/jetpack-onboarding/.gitignore
+[INFO]-[2018/05/29 07:38:27] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/plugins/mojo-marketplace-wp-plugin/vendor/jetpack/jetpack-onboarding/client/.DS_Store
+[INFO]-[2018/05/29 07:38:27] Total 1350 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1400 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1450 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1500 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1550 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1600 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1650 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1700 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1750 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1800 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1850 files processed
+[INFO]-[2018/05/29 07:38:28] Total 1900 files processed
+[INFO]-[2018/05/29 07:38:28] Total 1950 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2000 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2050 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2100 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2150 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2200 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2250 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2300 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2350 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2400 files processed
+[INFO]-[2018/05/29 07:38:28] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/wp-migrate-db/.htaccess
+[INFO]-[2018/05/29 07:38:28] Total 2450 files processed
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_register.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_register.png
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_footer.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_footer.png
+[INFO]-[2018/05/29 07:38:28] Total 2500 files processed
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_benefits.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_benefits.png
+[INFO]-[2018/05/29 07:38:28] Total 2550 files processed
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_register-cta.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_register-cta.png
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_hero-1.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_hero-1.png
+[INFO]-[2018/05/29 07:38:28] Total 2600 files processed
+[INFO]-[2018/05/29 07:38:28] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/wp-staging/logs/rcfhl-staging.log
+[INFO]-[2018/05/29 07:38:28] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/gravity_forms/.htaccess
+[INFO]-[2018/05/29 07:38:29] Total 2650 files processed
+[INFO]-[2018/05/29 07:38:29] Total 2700 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/rcfhl-theme/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2750 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/rcfhl-theme/scss/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2800 files processed
+[INFO]-[2018/05/29 07:38:29] Total 2850 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2900 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/rookie/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2950 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3000 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3050 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3100 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3150 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/hestia/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 3200 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3250 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3300 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3350 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3400 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3450 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3500 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3550 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3600 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3650 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3700 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3750 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3800 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3850 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3900 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3950 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4000 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4050 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4100 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4150 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4200 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4250 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4300 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4350 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4400 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4450 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4500 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4550 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4600 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4650 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4700 files processed
+[INFO]-[2018/05/29 07:38:26] Copying files...
+[INFO]-[2018/05/29 07:38:26] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/.DS_Store
+[INFO]-[2018/05/29 07:38:26] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/.htaccess
+[INFO]-[2018/05/29 07:38:26] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/.DS_Store
+[INFO]-[2018/05/29 07:38:26] Total 50 files processed
+[INFO]-[2018/05/29 07:38:26] Total 100 files processed
+[INFO]-[2018/05/29 07:38:26] Total 150 files processed
+[INFO]-[2018/05/29 07:38:26] Total 200 files processed
+[INFO]-[2018/05/29 07:38:26] Total 250 files processed
+[INFO]-[2018/05/29 07:38:26] Total 300 files processed
+[INFO]-[2018/05/29 07:38:26] Total 350 files processed
+[INFO]-[2018/05/29 07:38:26] Total 400 files processed
+[INFO]-[2018/05/29 07:38:26] Total 450 files processed
+[INFO]-[2018/05/29 07:38:26] Total 500 files processed
+[INFO]-[2018/05/29 07:38:26] Total 550 files processed
+[INFO]-[2018/05/29 07:38:26] Total 600 files processed
+[INFO]-[2018/05/29 07:38:26] Total 650 files processed
+[INFO]-[2018/05/29 07:38:26] Total 700 files processed
+[INFO]-[2018/05/29 07:38:26] Total 750 files processed
+[INFO]-[2018/05/29 07:38:26] Total 800 files processed
+[INFO]-[2018/05/29 07:38:26] Total 850 files processed
+[INFO]-[2018/05/29 07:38:26] Total 900 files processed
+[INFO]-[2018/05/29 07:38:26] Total 950 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1000 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1050 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1100 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1150 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1200 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1250 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1300 files processed
+[INFO]-[2018/05/29 07:38:27] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/plugins/mojo-marketplace-wp-plugin/vendor/jetpack/jetpack-onboarding/.gitignore
+[INFO]-[2018/05/29 07:38:27] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/plugins/mojo-marketplace-wp-plugin/vendor/jetpack/jetpack-onboarding/client/.DS_Store
+[INFO]-[2018/05/29 07:38:27] Total 1350 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1400 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1450 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1500 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1550 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1600 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1650 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1700 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1750 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1800 files processed
+[INFO]-[2018/05/29 07:38:27] Total 1850 files processed
+[INFO]-[2018/05/29 07:38:28] Total 1900 files processed
+[INFO]-[2018/05/29 07:38:28] Total 1950 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2000 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2050 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2100 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2150 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2200 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2250 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2300 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2350 files processed
+[INFO]-[2018/05/29 07:38:28] Total 2400 files processed
+[INFO]-[2018/05/29 07:38:28] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/wp-migrate-db/.htaccess
+[INFO]-[2018/05/29 07:38:28] Total 2450 files processed
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_register.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_register.png
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_footer.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_footer.png
+[INFO]-[2018/05/29 07:38:28] Total 2500 files processed
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_benefits.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_benefits.png
+[INFO]-[2018/05/29 07:38:28] Total 2550 files processed
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_register-cta.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_register-cta.png
+[INFO]-[2018/05/29 07:38:28] Trying to copy big file: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/2018/05/bg_home_hero-1.png -> /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-content/uploads/2018/05/bg_home_hero-1.png
+[INFO]-[2018/05/29 07:38:28] Total 2600 files processed
+[INFO]-[2018/05/29 07:38:28] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/wp-staging/logs/rcfhl-staging.log
+[INFO]-[2018/05/29 07:38:28] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/uploads/gravity_forms/.htaccess
+[INFO]-[2018/05/29 07:38:29] Total 2650 files processed
+[INFO]-[2018/05/29 07:38:29] Total 2700 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/rcfhl-theme/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2750 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/rcfhl-theme/scss/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2800 files processed
+[INFO]-[2018/05/29 07:38:29] Total 2850 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2900 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/rookie/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 2950 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3000 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3050 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3100 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3150 files processed
+[INFO]-[2018/05/29 07:38:29] Skipping file by rule: /Users/scasey/git/rcfhl.localhost/wp-content/themes/hestia/.DS_Store
+[INFO]-[2018/05/29 07:38:29] Total 3200 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3250 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3300 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3350 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3400 files processed
+[INFO]-[2018/05/29 07:38:29] Total 3450 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3500 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3550 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3600 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3650 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3700 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3750 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3800 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3850 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3900 files processed
+[INFO]-[2018/05/29 07:38:30] Total 3950 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4000 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4050 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4100 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4150 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4200 files processed
+[INFO]-[2018/05/29 07:38:30] Total 4250 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4300 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4350 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4400 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4450 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4500 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4550 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4600 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4650 files processed
+[INFO]-[2018/05/29 07:38:31] Total 4700 files processed
+[INFO]-[2018/05/29 07:38:33] Copying files finished
+[INFO]-[2018/05/29 07:38:33] Copying files finished
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step1: Updating siteurl and homeurl in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step1: Updating siteurl and homeurl to http://rcfhl.localhost/rcfhl-staging
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step2: Updating row wpstg_is_staging_site in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step3: Updating rewrite_rules in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step4: Updating db prefix in wpstg0_usermeta. Error: 
+[INFO]-[2018/05/29 07:38:34] Updating db option_names in wpstg0_options. Error: 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step5: Updating table_prefix in /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-config.php to wpstg0_
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step7: Updating wpstg_rmpermalinks_executed in wpstg0_options 
+[WARNING]-[2018/05/29 07:38:34] Failed to update wpstg_rmpermalinks_executed in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step8: Updating permalink_structure in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step8: Finished Step 8 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step9: Set staging site to noindex
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step9: Finished Step 9 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step10: Updating WP_HOME in wp-config.php to http://rcfhl.localhost/rcfhl-staging
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step10: WP_HOME not defined in wp-config.php. Skipping this step.
+[INFO]-[2018/05/29 07:38:34] Preparing Data: Finished Step 11 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step11: Updating WP_SITEURL in wp-config.php to http://rcfhl.localhost/rcfhl-staging
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step11: WP_SITEURL not defined in wp-config.php. Skipping this step.
+[INFO]-[2018/05/29 07:38:34] Preparing Data: Finished Step 11 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step1: Updating siteurl and homeurl in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step1: Updating siteurl and homeurl to http://rcfhl.localhost/rcfhl-staging
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step2: Updating row wpstg_is_staging_site in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step3: Updating rewrite_rules in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step4: Updating db prefix in wpstg0_usermeta. Error: 
+[INFO]-[2018/05/29 07:38:34] Updating db option_names in wpstg0_options. Error: 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step5: Updating table_prefix in /Users/scasey/git/rcfhl.localhost/rcfhl-staging/wp-config.php to wpstg0_
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step7: Updating wpstg_rmpermalinks_executed in wpstg0_options 
+[WARNING]-[2018/05/29 07:38:34] Failed to update wpstg_rmpermalinks_executed in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step8: Updating permalink_structure in wpstg0_options 
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step8: Finished Step 8 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step9: Set staging site to noindex
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step9: Finished Step 9 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step10: Updating WP_HOME in wp-config.php to http://rcfhl.localhost/rcfhl-staging
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step10: WP_HOME not defined in wp-config.php. Skipping this step.
+[INFO]-[2018/05/29 07:38:34] Preparing Data: Finished Step 11 successfully
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step11: Updating WP_SITEURL in wp-config.php to http://rcfhl.localhost/rcfhl-staging
+[INFO]-[2018/05/29 07:38:34] Preparing Data Step11: WP_SITEURL not defined in wp-config.php. Skipping this step.
+[INFO]-[2018/05/29 07:38:34] Preparing Data: Finished Step 11 successfully
+[]-[] 
+[]-[] 
+[INFO]-[2018/05/29 07:38:36] Finish: Deleting clone job's cache files...
+[INFO]-[2018/05/29 07:38:36] Finish: Clone job's cache files have been deleted!
+[INFO]-[2018/05/29 07:38:36] Finish: Verifying existing clones...
+[INFO]-[2018/05/29 07:38:36] Finish: rcfhl-staging's clone job's data is not in database, generating data
+[INFO]-[2018/05/29 07:38:36] Finish: Deleting clone job's cache files...
+[INFO]-[2018/05/29 07:38:36] Finish: Clone job's cache files have been deleted!
+[INFO]-[2018/05/29 07:38:36] Finish: Verifying existing clones...
+[INFO]-[2018/05/29 07:38:36] Finish: rcfhl-staging's clone job's data is not in database, generating data
