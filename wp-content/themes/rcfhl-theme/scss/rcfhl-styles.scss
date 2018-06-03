@@ -750,6 +750,11 @@ footer {
 			}
 		}
 	}
+	.rcfhl-info {
+		a {
+			display: none;
+		}
+	}
 	.great-skate-info {
 		margin-bottom: 56px;
 	}
@@ -1196,6 +1201,15 @@ footer {
 				.gform_heading {
 					display: none;
 				}
+				.validation_error {
+					color: white;
+					border: none;
+					background-color: $color-red;
+					font-family: $body-font;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 22px;
+				}
 				.gform_body {
 					font-family: $body-font;
 					.gform_fields {
@@ -1270,7 +1284,7 @@ footer {
 								}
 								.ginput_cardextras {
 									.ginput_cardinfo_left {
-										width: 68%;
+										width: 58%;
 										margin-right: 16px;
 										margin-bottom: 0;
 										.ginput_card_expiration_container {
@@ -1300,10 +1314,10 @@ footer {
 										}
 									}
 									.ginput_cardinfo_right {
-										width: 23%;
+										width: 33%;
 										margin: 0;
 										input {
-											max-width: none;
+											max-width: none !important;
 											width: 100%;
 										}
 										.ginput_card_security_code_icon {
@@ -1330,8 +1344,27 @@ footer {
 							}
 						}
 						
+						/* ! ---- ^#Error */
+						.gfield_error {
+						    border-radius: 0;
+						    border: none;
+						    padding: 16px 8px;
+						    .gfield_creditcard_warning_message {
+								padding-top: 52px;
+							}
+						    .gfield_description {
+							    background: none;
+							    position: absolute;
+							    top: 12px;
+							    padding-top: 0;
+							    &:before {
+								    border: none;
+							    }
+						    }
+						}
+						
 						/* ! ---- ^#DOB */
-						#field_2_13, #field_3_13 {
+						#field_2_13, #field_3_13, #field_4_13 {
 							.ginput_container {
 								.ginput_container_date {
 									width: 33%;
@@ -1356,6 +1389,7 @@ footer {
 							}
 						}
 						
+						/* ! ---- ^#Liability Waiver */
 						.gfield_html {
 						    margin-top: 24px;
 						    background: #f2f2f2;
