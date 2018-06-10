@@ -130,7 +130,7 @@ function rcfhl_theme_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	
-	wp_enqueue_style( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js' );
+	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.3.1.min.js' );
 
 	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/slick/slick.js' );
 	
@@ -207,6 +207,12 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Footer',
 		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'global-options',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Team Single',
+		'menu_title'	=> 'Team Single',
 		'parent_slug'	=> 'global-options',
 	));
 	
@@ -318,7 +324,7 @@ function populate_league( $form ) {
     return $form;
 }
 
-/* ================= Gravity Forms + Stripe: Create Customer =======================*/
+/* ================= Gravity Forms + Stripe: Create Customer – Player & Team =======================*/
 
 add_filter( 'gform_stripe_customer_id', function ( $customer_id, $feed, $entry, $form ) {
     if ( rgars( $feed, 'meta/transactionType' ) == 'product' && rgars( $feed, 'meta/feedName' ) == 'Create Customer' ) {
@@ -353,6 +359,46 @@ add_filter( 'gform_stripe_customer_id', function ( $customer_id, $feed, $entry, 
  
 add_filter( 'gform_stripe_charge_authorization_only', function ( $authorization_only, $feed ) {
     if ( rgars( $feed, 'meta/feedName' ) == 'Create Customer' ) {
+        return true;
+    }
+ 
+    return $authorization_only;
+}, 10, 2 );
+
+
+/* ================= Gravity Forms + Stripe: Create Customer – Free Agent =======================*/
+
+add_filter( 'gform_stripe_customer_id', function ( $customer_id, $feed, $entry, $form ) {
+    if ( rgars( $feed, 'meta/transactionType' ) == 'product' && rgars( $feed, 'meta/feedName' ) == 'Create Customer - Free Agent' ) {
+        $customer_meta = array();
+		
+// 		$cust_first = rgars ( $feed, 'meta/metaData/3/value' );
+// 		$cust_last = rgars ( $feed, 'meta/metaData/4/value' );
+// 		$time_stamp = time();
+		$email_field = rgars( $feed, 'meta/metaData/0/value' );
+		$cust_name = rgars ( $feed, 'meta/metaData/4/value' );
+		$cust_season = rgars ( $feed, 'meta/metaData/1/value' );
+		$cust_phone = rgars ( $feed, 'meta/metaData/5/value' );
+// 		$cust_id = $cust_first . '_' . $cust_last;
+
+        if ( ! empty( $email_field ) && strtolower( $email_field ) !== 'do not send receipt' ) {
+            $customer_meta['email'] = gf_stripe()->get_field_value( $form, $entry, $email_field );
+            $customer_meta['metadata[Name]'] = gf_stripe()->get_field_value( $form, $entry, $cust_name );
+            $customer_meta['metadata[Season]'] = gf_stripe()->get_field_value( $form, $entry, $cust_season );
+            $customer_meta['metadata[Phone]'] = gf_stripe()->get_field_value( $form, $entry, $cust_phone );
+//          $customer_meta['id'] = gf_stripe()->get_field_value( $form, $entry, $cust_id );
+        }
+ 
+        $customer = gf_stripe()->create_customer( $customer_meta, $feed, $entry, $form );
+ 
+        return $customer->id;
+    }
+ 
+    return $customer_id;
+}, 10, 4 );
+ 
+add_filter( 'gform_stripe_charge_authorization_only', function ( $authorization_only, $feed ) {
+    if ( rgars( $feed, 'meta/feedName' ) == 'Create Customer - Free Agent' ) {
         return true;
     }
  
@@ -427,3 +473,40 @@ class GWMapFieldToField {
     }
 }
 new GWMapFieldToField();
+
+
+/*
+// Add the custom columns to the book post type:
+add_filter( 'manage_sp_player_posts_columns', 'set_custom_edit_sp_player_columns' );
+function set_custom_edit_sp_player_columns($columns) {
+    unset( $columns['sp_number'] );
+    $columns['player_number'] = '#';
+
+    return $columns;
+}
+
+// Add the data to the custom columns for the book post type:
+add_action( 'manage_sp_player_posts_custom_column' , 'custom_sp_player_column', 10, 2 );
+function custom_sp_player_column( $column, $post_id ) {
+	switch( $column ) { 
+        case 'player_number':
+            echo ($value = get_post_meta($post_id, 'sp_metrics[playernumber]', true ) ) ? $value : 'Z';
+        break;
+
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

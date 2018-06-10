@@ -33,16 +33,6 @@
 
 <body <?php body_class(); ?>>
 	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120260761-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'UA-120260761-1');
-	</script>
-	
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
 			

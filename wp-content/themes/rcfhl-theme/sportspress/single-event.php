@@ -2,7 +2,7 @@
 /**
  * The template for displaying SportsPress team pages.
  *
- * @package Rookie
+ * @package rcfhl-theme
  */
 
 get_header(); ?>
