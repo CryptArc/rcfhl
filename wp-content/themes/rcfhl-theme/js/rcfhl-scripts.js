@@ -97,7 +97,43 @@ jQuery(function($){
 				teamOTL = $(this).children(".data-ot").text();
 				return false;		
 			}
-		});	
+		});
+		
+		//! ------ ^# Determine Position Suffix e.g. st,rd,th, etc
+		var positionSuffix;
+		switch (teamPosition) {
+		    case '1':
+		        positionSuffix = "st";
+		        break;
+		    case '2':
+		        positionSuffix = "nd";
+		        break;
+		    case '3':
+		        positionSuffix = "rd";
+		        break;
+		    case '4','5','6','7','8','9','10','11','12','13','14':
+		        positionSuffix = "th";
+		}
+		
+		//! ------ ^# Place Record Into Hero
+		$( ".single-team .team-single-hero .team-info .team-wins" ).text(teamWins);
+		$( ".single-team .team-single-hero .team-info .team-losses" ).text(teamLosses);
+		$( ".single-team .team-single-hero .team-info .team-otl" ).text(teamOTL);
+		$( ".single-team .team-single-hero .team-info .standings-position" ).text(teamPosition);
+		$( ".single-team .team-single-hero .team-info .position-suffix" ).text(positionSuffix);
+		
+		//! ------ ^# Remove current team from schedule
+		var scheduleTeamNames = $( ".single-team .full-schedule .data-event a");
+		scheduleTeamNames.each(function() {
+			$(this).text($(this).text().replace(teamName, '').replace(' vs ', ''));
+		});
+		
+// 		$( ".single-team .full-schedule .data-event a").text().replace(teamName,'');	
+// 		console.log($( ".single-team .full-schedule .data-event a").text());
+// 		console.log(teamName);
+		
+		
+		
 		
     }); //! ^# end document.ready
     

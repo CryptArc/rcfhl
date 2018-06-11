@@ -1865,17 +1865,36 @@ footer {
 				background-size: cover;
 				background-position: 50% 50%;
 				margin-bottom: 32px;
-				h1 {
-					color: white;
-					font-family: $display-font;
-					font-weight: 700;
-					font-style: italic;
-					text-transform: uppercase;
-					font-size: 56px;
-					letter-spacing: 1px;
-					line-height: 60px;
-					margin-bottom: 0;
-					padding: 32px 0;
+				.row {
+					padding: 56px 0;
+					.season-info, .team-info {
+						p {
+							font-family: $body-font;
+							color: white;
+							font-weight: 400;
+							font-size: 16px;
+							margin-bottom: 0;
+						}
+					}
+					.team-info {
+						p {
+							color: $color-gold;
+							font-weight: 700;
+							font-style: italic;
+						}
+					}
+					h1 {
+						color: white;
+						font-family: $display-font;
+						font-weight: 700;
+						font-style: italic;
+						text-transform: uppercase;
+						font-size: 64px;
+						letter-spacing: 1px;
+						line-height: 60px;
+						margin-bottom: 0;
+						padding: 0;
+					}
 				}
 			}
 			.raw-data {
@@ -1883,103 +1902,210 @@ footer {
 			}
 			.tables-wrap {
 				.left-wrap {
-					
 					/* ! -- ^#Team Leaders Table */
 					.team-leaders {
-						background-color: white;
-						box-shadow: 0 8px 8px -6px rgba(12,62,100,0.50);
 						margin-bottom: 32px;
-						.header-wrap {
-							padding: 0;
-							.team-leader-header {
-								font-family: $body-font;
-								font-weight: 700;
-								font-size: 24px;
-								color: white;
-								background-color: $color-navy;
-								padding: 16px 24px;
-								margin-bottom: 40px;
-							}
-						}
-						.point-leader, .goal-leader, .plusminus-leader, .svpercent-leader {
-							margin-bottom: 48px;
-							padding: 0;
-							.stat-label {
-								font-family: $body-font;
-								font-weight: 700;
-								text-transform: uppercase;
-								font-size: 20px;
-								color: $color-navy;
-								padding-bottom: 8px;
-								margin-bottom: 0;
-							}
-							.player-name {
-								display: inline-block;
-								font-family: $display-font;
-								font-weight: 400;
-								font-size: 32px;
-								color: $color-navy;
-								line-height: 28px;
-								width: auto;
-								padding-right: 40px;
-							}
-							.pound {
-								display: inline-block;
-								border-right: 2px solid $color-gold;
-								font-family: $body-font;
-								font-weight: 400;
-								font-size: 28px;
-								color: $color-navy;
-								padding-right: 12px;
-								margin-right: 12px;
-								margin-bottom: 0;
-								.player-number {
+						.team-leaders-wrap {
+							background-color: white;
+							box-shadow: 0 8px 8px -6px rgba(12,62,100,0.50);
+							.header-wrap {
+								.team-leader-header {
+									font-family: $body-font;
 									font-weight: 700;
-									font-size: 40px;
+									font-size: 24px;
+									color: white;
+									background-color: $color-navy;
+									padding: 16px 24px;
+									margin-bottom: 0px;
 								}
 							}
-							.player-stat {
-								font-family: $display-font;
-								font-style: italic;
-								font-weight: 700;
-								font-size: 64px;
-								color: $color-gold;
-								line-height: 64px;
+							.row:nth-child(2) {
+								margin-top: 32px;
+								.point-leader, .goal-leader, .plusminus-leader, .svpercent-leader {
+									margin-bottom: 48px;
+									padding: 0;
+									.stat-label {
+										font-family: $body-font;
+										font-weight: 700;
+										text-transform: uppercase;
+										font-size: 20px;
+										color: $color-navy;
+										padding-bottom: 8px;
+										margin-bottom: 0;
+									}
+									.player-name {
+										display: inline-block;
+										font-family: $display-font;
+										font-weight: 400;
+										font-size: 32px;
+										color: $color-navy;
+										line-height: 28px;
+										width: auto;
+										padding-right: 40px;
+									}
+									.pound {
+										display: inline-block;
+										border-right: 2px solid $color-gold;
+										font-family: $body-font;
+										font-weight: 400;
+										font-size: 28px;
+										color: $color-navy;
+										padding-right: 12px;
+										margin-right: 12px;
+										margin-bottom: 0;
+										.player-number {
+											font-weight: 700;
+											font-size: 40px;
+										}
+									}
+									.player-stat {
+										font-family: $display-font;
+										font-style: italic;
+										font-weight: 700;
+										font-size: 64px;
+										color: $color-gold;
+										line-height: 64px;
+									}
+									.player-name, .player-stat {
+										position: relative;
+										top: 13px;
+									}
+								}
+								.point-leader, .plusminus-leader {
+									padding-left: 40px;
+								}
+								.goal-leader, .svpercent-leader {
+									padding-right: 40px;
+								}
+								.plusminus-leader, .svpercent-leader {
+									margin-bottom: 40px;
+								}
 							}
-							.player-name, .player-stat {
-								position: relative;
-								top: 13px;
-							}
-						}
-						.point-leader, .plusminus-leader {
-							padding-left: 40px;
-						}
-						.goal-leader, .svpercent-leader {
-							padding-right: 40px;
-						}
-						.plusminus-leader, .svpercent-leader {
-							margin-bottom: 40px;
-						}
-						.bottom-button {
-							font-family: $body-font;
-							font-weight: 700;
-							text-transform: uppercase;
-							font-size: 16px;
-							color: $color-navy;
-							padding: 12px 24px;
-							border-top: 2px solid $color-navy;
-							width: 100%;
-							@include transition-me(all, .3s);
-							&:hover {
-								text-decoration: none;
-								color: $color-gold;
-								@include transition-me(all, .3s);
+							.bottom-button {
+								.col-12 {
+									.league-leader-btn {
+										font-family: $body-font;
+										font-weight: 700;
+										text-transform: uppercase;
+										font-size: 16px;
+										color: $color-navy;
+										padding: 12px 24px;
+										border-top: 2px solid $color-navy;
+										width: 100%;
+										display: block;
+										@include transition-me(all, .3s);
+										&:hover {
+											text-decoration: none;
+											color: $color-gold;
+											@include transition-me(all, .3s);
+										}
+									}
+								}	
 							}
 						}
 					}
 				}
 				.right-wrap {
-					
+					.next-last-game {
+						.next-last-game-wrap {
+							background-color: white;
+							box-shadow: 0 8px 8px -6px rgba(12,62,100,0.50);
+							.header-wrap {
+								h2 {
+									font-family: $body-font;
+									font-weight: 700;
+									font-size: 24px;
+									color: white;
+									background-color: $color-navy;
+									padding: 16px 24px;
+									margin-bottom: 0px;
+								}
+							}
+							.last-game, .next-game {
+								.sportspress {
+									padding: 16px 0;
+									.sp-template-event-blocks {
+										margin-bottom: 0;
+										.sp-table-wrapper {
+											.sp-data-table {
+												border: none;
+												tbody {
+													tr {
+														td {
+															border: none;
+															.sp-event-results {
+																a {
+																	font-family: $display-font;
+																	font-style: italic;
+																	font-size: 64px;
+																	font-weight: 700;
+																	color: $color-gold;
+																	text-decoration: none;
+																	&:visited {
+																		color: $color-gold;
+																	}
+																}
+															}
+															.sp-event-date {
+																a {
+																	font-family: $body-font;
+																	text-align: center;
+																	font-size: 14px;
+																	color: $color-navy;
+																	text-decoration: none;
+																	&:visited {
+																		color: $color-navy;
+																	}
+																}
+															}
+															.sp-event-title {
+																a {
+																	font-family: $body-font;
+																	text-align: center;
+																	font-size: 18px;
+																	font-weight: 700;
+																	font-style: italic;
+																	color: $color-navy;
+																	text-decoration: none;
+																	&:visited {
+																		color: $color-navy;
+																	}
+																}
+															}
+														}
+													}
+												}	
+											}
+										}
+									}
+								}
+							}
+							.next-game {
+								.sportspress {
+									padding-top: 16px;
+									border-top: 2px solid $color-lt-gray;
+									.sp-template-event-blocks {
+										.sp-table-wrapper {
+											.sp-data-table {
+												tbody {
+													tr {
+														td {
+															.sp-event-results {
+																a {
+																	font-size: 40px;
+																	color: $color-navy;
+																}
+															}
+														}
+													}
+												}	
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
