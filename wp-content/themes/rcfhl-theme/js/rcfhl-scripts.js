@@ -84,6 +84,10 @@ jQuery(function($){
 		});
 
 
+		//! ---- ^# Goalie Stat Title Change
+		var goalieStatHeadline = $("#goalie-stats h4");
+		goalieStatHeadline.text("Goalie Stats");
+
 		//! ---- ^# Team Record
 		var teamPosition, teamWins, teamLosses, teamOTL;
 		var teamName = $(".team-single-hero h1").text();
