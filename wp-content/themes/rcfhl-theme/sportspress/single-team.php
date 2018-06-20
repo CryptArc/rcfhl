@@ -91,7 +91,7 @@ get_header(); ?>
 										</div>
 										<div class="row bottom-button">
 											<div class="col-12">
-												<a href="#" class="league-leader-btn">View League Leaders</a>
+												<a href="<?php the_field('league_leaders_link'); ?>" class="league-leader-btn">View League Leaders</a>
 											</div>
 										</div>
 									</div>
@@ -100,7 +100,7 @@ get_header(); ?>
 									<?php echo do_shortcode("[player_list id=$playerListID number='-1' columns='playernumber,gp,g,a,p,plusminus,pim' orderby='p' order='DESC' show_all_players_link='0' align='none']"); ?>
 								</div>
 								<div id="goalie-stats" class="col-12">
-									<?php echo do_shortcode("[player_list id=$playerListID grouping='position' number='-1' columns='playernumber,gp,sa,ga,sv,svpercent,gaa' orderby='sv' order='DESC' show_all_players_link='0' align='none']"); ?>
+									<?php echo do_shortcode("[player_list id=$playerListID grouping='position' number='-1' columns='playernumber,gp,sv,svpercent,ga,gaa' orderby='sv' order='DESC' show_all_players_link='0' align='none']"); ?>
 								</div>
 							</div>
 						</div>

@@ -1073,6 +1073,35 @@ footer {
 	}
 }
 
+/* ! ======= ^#Dashboard =======*/
+
+.dashboard {
+	background-color: $color-lt-gray;
+	
+	/* ! -- ^#Dashboard Hero */
+	.dashboard-hero {
+		background-size: cover;
+		background-position: 50% 50%;
+		margin-bottom: 32px;
+		.row {
+			padding: 56px 0;
+			h1 {
+				color: $color-navy;
+				font-family: $display-font;
+				font-weight: 700;
+				font-style: italic;
+				text-transform: uppercase;
+				font-size: 56px;
+				letter-spacing: 1px;
+				line-height: 48px;
+				margin-bottom: 0;
+				padding: 32px 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
 
 /* ! ======= ^#Register =======*/
 .register {
@@ -2254,6 +2283,117 @@ footer {
 										}	
 									}
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		/* ! ======= ^#Dashboard =======*/
+		
+		.dashboard {
+			background-color: $color-lt-gray;
+			
+			/* ! -- ^#Dashboard Hero */
+			.dashboard-hero {
+				margin-bottom: 32px;
+				.row {
+					padding: 56px 0;
+					h1 {
+						font-size: 64px;
+						text-align: left;
+					}
+				}
+			}
+			
+			.upcoming-games {
+				margin-top: 32px;
+				.upcoming-games-wrap {
+					background-color: white;
+					box-shadow: 0 8px 8px -6px rgba(12,62,100,0.50);
+				}
+				.header-wrap {
+					.upcoming-games-header {
+						font-family: $body-font;
+						font-weight: 700;
+						font-size: 20px;
+						color: white;
+						background-color: $color-navy;
+						padding: 12px 24px;
+						margin-bottom: 0px;
+					}
+				}
+				.sportspress {
+					padding: 16px 0;
+					.sp-template-event-blocks {
+						margin-bottom: 0;
+						.sp-table-wrapper {
+							.sp-data-table {
+								border: none;
+								tbody {
+									tr {
+										border-bottom: 2px solid $color-lt-gray;
+										margin-bottom: 24px;
+										td {
+											border: none;
+											display: block;
+											margin: 16px 0;
+											time {
+												margin: 0;
+											}
+											.sp-event-results {
+												a {
+													font-family: $display-font;
+													font-style: italic;
+													font-size: 40px;
+													font-weight: 700;
+													color: $color-gold;
+													text-decoration: none;
+													&:visited {
+														color: $color-gold;
+													}
+												}
+											}
+											.sp-event-date {
+												a {
+													font-family: $body-font;
+													text-align: center;
+													font-size: 14px;
+													color: $color-navy;
+													text-decoration: none;
+													&:visited {
+														color: $color-navy;
+													}
+												}
+											}
+											.sp-event-title {
+												a {
+													font-family: $body-font;
+													text-align: center;
+													font-size: 18px;
+													font-weight: 700;
+													color: $color-navy;
+													text-decoration: none;
+													&:visited {
+														color: $color-navy;
+													}
+													span {
+														font-style: italic;
+														font-weight: 400;
+														font-size: 14px;
+														vertical-align: top;
+													}
+												}
+											}
+										}
+									}
+									tr:first-child {
+										td {
+											margin-top: 0;
+										}
+									}
+								}	
 							}
 						}
 					}

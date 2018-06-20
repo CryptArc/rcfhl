@@ -126,15 +126,32 @@ jQuery(function($){
 		$( ".single-team .team-single-hero .team-info .standings-position" ).text(teamPosition);
 		$( ".single-team .team-single-hero .team-info .position-suffix" ).text(positionSuffix);
 		
+		//! ---- ^# Team Schedule	
+		
+		//! ------ ^# Determine Win or Loss
+		
 		//! ------ ^# Remove current team from schedule
+/*
 		var scheduleTeamNames = $( ".single-team .full-schedule .data-event a");
 		scheduleTeamNames.each(function() {
 			$(this).text($(this).text().replace(teamName, '').replace(' vs ', ''));
 		});
+*/
 		
-// 		$( ".single-team .full-schedule .data-event a").text().replace(teamName,'');	
-// 		console.log($( ".single-team .full-schedule .data-event a").text());
-// 		console.log(teamName);
+		
+		
+		
+		//! -- ^# Dashboard	
+		
+		//! ---- ^# Upcoming Games	
+			
+		//! ------ ^# Remove current team from schedule
+		
+		//! ------ ^# Teams on three lines
+		var versus = $(".dashboard .upcoming-games .sp-event-title a");
+		versus.each(function() {
+			$(this).html($(this).text().replace("vs", "</br><span>vs</span></br>"));
+		});
 		
 		
 		
